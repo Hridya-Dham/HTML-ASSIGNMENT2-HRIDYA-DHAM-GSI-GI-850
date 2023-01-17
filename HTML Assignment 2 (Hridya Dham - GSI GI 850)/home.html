@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body {
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            font-size: large;
+            
+            background-size: contain;
+        }
+
+        tr, td {
+            padding: 4px;
+        }
+
+        .centered {
+            text-align: center;
+        }
+        
+        .table-centered {
+            margin-left: 40%;
+            margin-right: auto;
+
+        }
+
+        .records {
+            margin-left: 35%;
+            margin-right: auto;
+        }
+        .records, .records td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        
+        footer {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+    </style>
+    <title>HTML ASSIGNMENT 2</title>
+  </head>
+  <body>
+    <h1 class="centered">Student Registration Form</Form></h1>
+
+    <!-- FORMS -->
+    <form>
+        <table class="table-centered">
+            <tr>
+                <td>
+                    <label for="fullname"><b>Name : </b></label>
+                </td>
+                <td>
+                    <input type="text" id="fullname" name="fullname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phno"><b>Phone No. : </b></label>
+                </td>
+                <td>
+                    <input type="tel" id="phno" name="phno" pattern="[0-9]{10}">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date"><b>Date of Birth : </b></label>
+                </td>
+                <td>
+                    <input type="date" id="date" name="date" style="width: 172px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label  for="address"><b>Address : </b></label>
+                </td>
+                <td>
+                    <textarea id="address" name="address" style="width: 172px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Gender : </b></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" >Male
+                    <input type="radio" id="female" name="gender" value="female">Female
+                    <input type="radio" id="other" name="gender" value="other">Others
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="city"><b>City :</b></label>
+                </td>
+                <td>
+                    <select id="city" name="City">
+                        <option value="default"  style="display: none;">Select City</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Bangalore">Bangalore</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Hobbies"><b>Hobbies : </b></label>
+                </td>
+                <td>
+                    <input type="checkbox" id="hobb1" name="hobb1" value="Music">
+                    <label for="hobb1">Music</label>
+                    <input type="checkbox" id="hobb2" name="hobb2" value="Sports">
+                    <label for="hobb2">Sports</label>
+                    <input type="checkbox" id="hobb3" name="hobb3" value="Reading">
+                    <label for="hobb3">Reading</label>
+                    <input type="checkbox" id="hobb4" name="hobb4" value="VideoGames">
+                    <label for="hobb4">Video Games</label>
+                    <input type="checkbox" id="hobb5" name="hobb5" value="Gymming">
+                    <label for="hobb5">Gymming</label> 
+                </td>
+            </tr>
+        </table>
+        <input type="submit" class="btn" style="margin-left: 45%; margin-top: 20px;">
+        <input type="reset" class="btn" style="margin-left: 2%; margin-top: 20px;"> 
+        
+    </form>
+
+    <!-- STUDENT RECORDS TABLE -->
+
+    <h1 class="centered" style="margin-top: 3%;">Student Records</h1>
+    <table class="records" style="text-align: center;">
+        <tr>
+            <td>S.No.</td>
+            <td>Name</td>
+            <td>Phone No.</td>
+            <td>Gender</td>
+            <td>DOB</td>
+            <td>Interets</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Hridya Dham</td>
+            <td>9711162514</td>
+            <td>Male</td>
+            <td>18-Nov-2000</td>
+            <td>
+                Video Games 
+                <br>
+                Outdoor Sports
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Kunal Khandelwal</td>
+            <td>9514162314</td>
+            <td>Male</td>
+            <td>15-Aug-2001</td>
+            <td>
+                Video Games 
+                <br>
+                Sleeping
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ishita Kanojia</td>
+            <td>9821262514</td>
+            <td>Female</td>
+            <td>02-Dec-2000</td>
+            <td>
+                Content Creation 
+                <br>
+                Travelling
+                <br>
+                Music
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mehar Mutreja</td>
+            <td>9928262534</td>
+            <td>Male</td>
+            <td>15-Dec-2000</td>
+            <td>
+                Music 
+                <br>
+                Video Games
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Vaibhav Shakiya</td>
+            <td>9938272534</td>
+            <td>Male</td>
+            <td>10-Feb-2000</td>
+            <td>
+                Art 
+                <br>
+                Video Games
+                <br>
+                Music
+            </td>
+        </tr>
+    </table>
+    
+    <footer style="text-align: right;">
+        Gemini Solutions Pvt. Ltd
+    </footer>
+
+
+
+
+  </body>
+</html>
